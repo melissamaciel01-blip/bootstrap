@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doenças de gatinhos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rosa: #f58fa8;
+      --rosa-escuro: #d96d8f;
+      --roxo: #7253a5;
+      --amarelo: #ffd166;
+      --texto: #4d3a5a;
+    }
+
+    body {
+      font-family: "Nunito", sans-serif;
+      color: var(--texto);
+      background: linear-gradient(180deg, #fffaf5 0%, #fef1f6 40%, #f1ebff 100%);
+    }
+
+    h1, h2, h3, .navbar-brand {
+      font-family: "Fredoka", sans-serif;
+    }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(117, 83, 165, 0.08);
+    }
+
+    .navbar-brand {
+      color: var(--roxo);
+      font-size: 1.5rem;
+    }
+
+    .btn-gatinho {
+      background: var(--amarelo);
+      border: 0;
+      color: var(--texto);
+      font-weight: 800;
+      box-shadow: 0 0.45rem 1rem rgba(255, 209, 102, 0.35);
+    }
+
+    .btn-gatinho:hover {
+      background: #ffe69d;
+      color: var(--texto);
+    }
+
+    .page-hero {
+      background: linear-gradient(120deg, rgba(245, 143, 168, 0.9), rgba(155, 120, 209, 0.9)),
+        url('https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      border-radius: 1.5rem;
+      color: white;
+      padding: 3rem 2rem;
+      box-shadow: 0 1rem 2rem rgba(114, 83, 165, 0.12);
+    }
+
+    .info-card {
+      background: rgba(255,255,255,0.92);
+      border-radius: 1.25rem;
+      box-shadow: 0 0.8rem 1.5rem rgba(114,83,165,0.08);
+      border: 0;
+    }
+
+    .alert-box {
+      background: rgba(255, 241, 245, 0.8);
+      border-left: 4px solid var(--rosa);
+      border-radius: 0.9rem;
+    }
+
+    .cat-photo {
+      height: 220px;
+      object-fit: cover;
+      border-radius: 1.2rem;
+      box-shadow: 0 0.7rem 1.5rem rgba(114, 83, 165, 0.12);
+    }
+
+    footer {
+      background: rgba(255,255,255,0.45);
+      border-top: 1px solid rgba(114,83,165,0.12);
+      color: #766b88;
+      padding-top: 1.2rem;
+      padding-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light sticky-top border-bottom">
+    <div class="container py-2">
+      <a class="navbar-brand" href="index.html">Miauravilhoso 🐱</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="doacoes.html">Doações</a></li>
+          <li class="nav-item"><a class="nav-link" href="saude-gatinhos.html">Saúde</a></li>
+          <li class="nav-item"><a class="nav-link" href="doencas-gatinhos.html">Doenças</a></li>
+        </ul>
+        <form class="d-flex ms-sm-3 mt-3 mt-sm-0" id="formBusca" role="search">
+          <label class="visually-hidden" for="buscaGatinhos">Pesquisar</label>
+          <input class="form-control me-2" id="buscaGatinhos" type="search" placeholder="Buscar: doações, saúde..." aria-label="Buscar informações sobre gatos">
+          <button class="btn btn-gatinho text-nowrap" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <section class="page-hero mb-5">
+      <h1 class="mb-3">Doenças comuns em gatinhos e como tratá-las</h1>
+      <p class="mb-0">Nem toda mudança no comportamento significa algo grave, mas alguns sinais podem indicar infecção, dor ou problema de saúde e precisam de atenção rápida.</p>
+    </section>
+
+    <div class="row g-4 mb-4">
+      <div class="col-md-6">
+        <div class="info-card p-4 h-100">
+          <h2 class="h4">Rinotraqueíte infecciosa</h2>
+          <p>Em geral aparece com espirros, secreção nasal e olhos lacrimejantes. O tratamento é orientado pelo veterinário e pode incluir medicamentos, repouso e hidratação.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-card p-4 h-100">
+          <h2 class="h4">Panleucopenia felina</h2>
+          <p>É uma doença viral séria e pode causar febre, vômito, diarreia e fraqueza. Precisa de atenção veterinária imediata e pode exigir internação.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+      <div class="col-md-4">
+        <div class="info-card p-4 h-100">
+          <h2 class="h4">Verminoses</h2>
+          <p>O sintoma mais comum é o aumento do apetite ou barriga inchada. O tratamento geralmente consiste em vermífugos prescritos por um veterinário.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info-card p-4 h-100">
+          <h2 class="h4">Dermatites</h2>
+          <p>Coceira, crostas e perda de pelo na pele podem indicar irritação, alergia ou parasitas. O tratamento depende da causa, mas limpeza e medicação podem ser indicados.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info-card p-4 h-100">
+          <h2 class="h4">Problemas respiratórios</h2>
+          <p>Tosse, falta de ar e olhos lacrimejantes merecem avaliação veterinária para evitar piora e identificar infecções ou irritações.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+      <div class="col-md-4">
+        <img class="cat-photo w-100" src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&w=900&q=80" alt="Gatinho sossegado e feliz">
+      </div>
+      <div class="col-md-4">
+        <img class="cat-photo w-100" src="https://images.unsplash.com/photo-1548546738-8509cb246ed3?auto=format&fit=crop&w=900&q=80" alt="Gatinho observando o ambiente">
+      </div>
+      <div class="col-md-4">
+        <img class="cat-photo w-100" src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=80" alt="Gatinho laranja em pose clássica">
+      </div>
+    </div>
+
+    <div class="alert-box p-4 mb-4">
+      <h2 class="h3 mb-3">Como tratar corretamente</h2>
+      <ul class="mb-0">
+        <li>Leve o gato ao veterinário ao notar sinais persistentes</li>
+        <li>Não administre remédios humanos sem orientação profissional</li>
+        <li>Mantenha o ambiente limpo, seco e sem estresse excessivo</li>
+        <li>Monitore febre, vômitos, apetite e comportamento</li>
+        <li>Use a medicação conforme a prescrição e acompanhe a evolução</li>
+      </ul>
+    </div>
+
+    <div class="info-card p-4">
+      <h2 class="h3 mb-3">Quando procurar ajuda veterinária</h2>
+      <p class="mb-0">Se o gatinho estiver com febre, desidratado, muito letárgico, sem comer, com dificuldade para respirar ou com sintomas que persiste por mais de 24 horas, é importante procurar atendimento urgente.</p>
+    </div>
+  </main>
+
+  <footer class="container-fluid">
+    <div class="container text-center">
+      <p class="mb-1"><strong>Contato fictício:</strong> (11) 98765-4321</p>
+      <p class="mb-0">Cuidado, carinho e atenção para cada patinha. 🐾</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('formBusca').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const termo = document.getElementById('buscaGatinhos').value.trim().toLowerCase();
+      if (!termo) return;
+      if (termo.includes('doa') || termo.includes('ajuda') || termo.includes('patroc')) {
+        window.location.href = 'doacoes.html';
+      } else if (termo.includes('saude') || termo.includes('vacin') || termo.includes('cuidad') || termo.includes('trat')) {
+        window.location.href = 'saude-gatinhos.html';
+      } else if (termo.includes('doenc') || termo.includes('doença') || termo.includes('sintoma') || termo.includes('virose')) {
+        window.location.href = 'doencas-gatinhos.html';
+      } else {
+        window.location.href = 'saude-gatinhos.html';
+      }
+    });
+  </script>
+</body>
+</html>
